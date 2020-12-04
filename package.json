@@ -1,0 +1,13 @@
+{
+  "name": "advent-of-code-2020",
+  "version": "1.0.0",
+  "description": "holiday coding fun",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js"
+  },
+  "author": "Candice Marquart",
+  "license": "ISC"
+}
