@@ -1,0 +1,6 @@
+# DEPENDENCIES
+/node_modules
+
+# IDE
+.idea/
+*.iml
