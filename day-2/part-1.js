@@ -12,7 +12,7 @@ const parseInput = () => {
 
 const reducer = (ruleObj, currentRule, idx) => {
   // determine the key name based on item index
-  // formate the item
+  // format the item
   let formattedRuleArr
   if (idx === 0) {
     formattedRuleArr = currentRule.split('-')
@@ -38,7 +38,7 @@ const isPasswordValid = (ruleObject) => {
   let i
   let charCount = 0
   for (i = 0; i < ruleObject.password.length; i++){
-    //  if required char appears
+    //  check if required char appears
     if (ruleObject.requiredChar === ruleObject.password[i]) {
       charCount++
     }
@@ -52,14 +52,10 @@ const isPasswordValid = (ruleObject) => {
 
 export const solve = () => {
   parseInput()
-  // for each item in the allRulesArray
   let niceList = 0
   allRulesArray.map(singleRuleArray => {
-    // call parse input
     const parsedObj = parseRules(singleRuleArray)
-    // do check on password
     const isValid = isPasswordValid(parsedObj)
-    // if isValid, add to niceList
     if (isValid) {
       niceList++
     }
