@@ -1,6 +1,6 @@
 import { input } from './input.js'
 
-const transformInput = () => {
+const pushTobogganDownHill = () => {
   let inputList = input.split('\n')
 
   let treeCount = 0
@@ -19,7 +19,7 @@ const transformInput = () => {
 }
 
 export const solve = () => {
-  transformInput()
+  pushTobogganDownHill()
 }
 
 // --- Day 3: Toboggan Trajectory ---
